@@ -1,0 +1,136 @@
+
+.admin-students-page {
+  width: 100%;
+}
+
+.admin-student-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.admin-student-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.admin-student-stat span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.admin-student-stat strong {
+  color: #1e293b;
+  font-size: 26px;
+}
+
+.admin-student-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.admin-student-toolbar input {
+  flex: 1;
+  min-width: 220px;
+}
+
+.admin-student-toolbar input,
+.admin-student-toolbar select,
+.admin-student-toolbar button {
+  padding: 11px 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+}
+
+.admin-student-toolbar button {
+  cursor: pointer;
+  background: #1e40af;
+  color: white;
+  border-color: #1e40af;
+}
+
+.admin-student-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.admin-student-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+}
+
+.admin-student-table th,
+.admin-student-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 13px;
+}
+
+.admin-student-table th {
+  background: #f8fafc;
+  color: #475569;
+}
+
+.admin-student-table td {
+  color: #334155;
+}
+
+.admin-student-department {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 20px;
+  background: #dbeafe;
+  color: #1e40af;
+  font-weight: 600;
+}
+
+.admin-student-empty {
+  text-align: center !important;
+  padding: 30px !important;
+  color: #64748b !important;
+}
+
+.admin-student-error {
+  padding: 15px;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 8px;
+}
+
+.admin-student-error button {
+  margin-left: 12px;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+
+.admin-student-note {
+  margin-top: 16px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .admin-student-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-student-toolbar {
+    flex-direction: column;
+  }
+}
+

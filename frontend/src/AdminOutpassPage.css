@@ -1,0 +1,147 @@
+
+.admin-outpass-page {
+  width: 100%;
+}
+
+.admin-outpass-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.admin-outpass-stat {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-outpass-stat span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.admin-outpass-stat strong {
+  font-size: 26px;
+  color: #1e293b;
+}
+
+.admin-outpass-toolbar {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.admin-outpass-toolbar input,
+.admin-outpass-toolbar select {
+  padding: 11px 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+}
+
+.admin-outpass-toolbar input {
+  flex: 1;
+  min-width: 180px;
+}
+
+.admin-outpass-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.admin-outpass-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1100px;
+}
+
+.admin-outpass-table th,
+.admin-outpass-table td {
+  padding: 13px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 13px;
+}
+
+.admin-outpass-table th {
+  background: #f8fafc;
+  color: #475569;
+}
+
+.admin-outpass-table td {
+  color: #334155;
+}
+
+.admin-outpass-status {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 20px;
+  background: #e2e8f0;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.admin-outpass-status.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.admin-outpass-status.approved {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.admin-outpass-status.out {
+  background: #ffedd5;
+  color: #9a3412;
+}
+
+.admin-outpass-status.returned {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.admin-outpass-status.rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.admin-outpass-empty {
+  text-align: center !important;
+  padding: 30px !important;
+  color: #64748b !important;
+}
+
+.admin-outpass-error {
+  padding: 14px;
+  margin: 15px 0;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 8px;
+}
+
+.admin-outpass-note {
+  margin-top: 16px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .admin-outpass-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-outpass-toolbar {
+    flex-direction: column;
+  }
+}

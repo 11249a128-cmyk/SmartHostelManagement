@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+**/target/
+**/dist/
+**/build/
+
+# Private environment settings
+.env
+.env.*
+!.env.example
+
+# Local configuration
+application-local.properties
+application-secret.properties
+
+# Uploaded files and logs
+uploads/
+**/uploads/
+*.log
+
+# IDE and operating system files
+.idea/
+.DS_Store
+Thumbs.db
