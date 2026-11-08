@@ -1,6 +1,7 @@
 ﻿# Smart Hostel Management & AI-Based Student Support System
 
 ## Project Team
+- I. Akshith Reddy
 - D. Nitheesh
 - A. Jithendra
 
